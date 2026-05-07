@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0A0A0A] text-white antialiased selection:bg-white selection:text-black;
+  }
+}
+
+@layer utilities {
+  .text-cracked {
+    position: relative;
+    color: white;
+    background: linear-gradient(to bottom, #fff, #fff);
+    -webkit-background-clip: text;
+  }
+
+  /* Custom pattern for cracks */
+  .bg-cracks {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L20,30 L15,50 L40,60 L30,90 M60,10 L70,40 L90,30 L80,70 L95,85 M20,5 L35,25 L30,45 M80,5 L70,25 L75,45' stroke='%23333' fill='none' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+  }
+}
