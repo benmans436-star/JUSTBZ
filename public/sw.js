@@ -1,9 +1,8 @@
 const CACHE_NAME = 'justbz-cache-v1';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/src/main.tsx',
-  '/favicon.svg'
+  './',
+  './index.html',
+  './favicon.svg'
 ];
 
 self.addEventListener('install', (event) => {
